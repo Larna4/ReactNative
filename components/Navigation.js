@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, View } from 'react-native'
 import { NavigationContainer } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
-import Home from './Home'
+import List from './List'
 import Search from './Search'
 import Post from './Post'
 import Profile from './Profile'
@@ -17,11 +17,11 @@ export default class TabNavigation extends Component {
       <NavigationContainer> 
         <Tab.Navigator>
           <Tab.Screen 
-            name="Home" 
-            component={Home} 
+            name="List" 
+            component={List} 
             options={{ 
               tabBarIcon: ({ color, size }) => (
-                <Ionicons name="ios-home" color={color} size={size} />)
+                <Ionicons name="ios-list" color={color} size={size} />)
             }}
           />
           <Tab.Screen 
